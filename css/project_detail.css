@@ -1561,11 +1561,15 @@ Circle 3 ≈ 500px after Circle 2
     .gallery-item-2,
     .gallery-item-3,
     .gallery-item-4 {
-        aspect-ratio: auto;
+    
+           width: 100%;
+           height: auto;
+           aspect-ratio: auto;
     }
 
 
     .gallery-item img {
+        width: 100%;
         height: auto;
     }
 
