@@ -1,0 +1,969 @@
+/* ---------- font ---------- */
+@font-face {
+    font-family: "Roboto";
+    src: url("../assets/font/roboto_regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../assets/font/roboto_medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../assets/font/roboto_semibold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* ---------- Basic reset ---------- */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    background-color: #FFFDF9;
+    color: #2b2b2b;
+    font-family: "Roboto", Arial, sans-serif;
+}
+
+
+/* ---------- Header ---------- */
+
+header {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    right: 0;
+
+    padding: 40px 40px 20px 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #FFFDF9;
+
+    z-index: 1000;
+}
+
+/* Ruby logo */
+
+header > img {
+    width: 120px;
+    height: 40px;
+    object-fit: contain;
+}
+
+
+/* Navigation */
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+nav a {
+    color: #2b2b2b;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: none;
+    transition: color 5s ease;
+}
+
+nav a:hover {
+    color: #2b2b2b;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+/* ---------- Home page ---------- */
+
+#home {
+    position: relative;
+
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+
+/* Portfolio title */
+
+.portfolio-title {
+    width: 926px;
+    max-width: calc(100% - 80px);
+    height: auto;
+
+    display: block;
+
+    position: relative;
+    z-index: 2;
+}
+
+
+/* Year */
+
+.hero-year {
+    margin: 20px 0 0 0;
+
+    color: #2b2b2b;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+
+    position: relative;
+    z-index: 2;
+}
+
+.hero-subtitle {
+    margin: 0 0 30px 0;
+    color: #2b2b2b;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+
+    position: relative;
+    z-index: 2;
+}
+
+/* ---------- Sparkles ---------- */
+
+.sparkle {
+    position: absolute;
+
+    display: block;
+    height: auto;
+
+    pointer-events: none;
+    z-index: 1;
+
+    animation: twinkle 2.5s steps(1, end) infinite;
+}
+
+.sparkle-1 {
+    width: 50px;
+}
+
+.sparkle-2 {
+    width:60px;
+}
+
+.sparkle-3 {
+    width: 50px;
+}
+
+/* s1 */
+
+.sparkle-1-a {
+    left: 18.5%;
+    top: 26%;
+    animation-delay: 0s;
+}
+
+.sparkle-1-b {
+    left: 86%;
+    top: 49%;
+    animation-delay: 0.7s;
+}
+
+.sparkle-1-c {
+    left: 72.5%;
+    top: 75%;
+    animation-delay: 1.2s;
+}
+
+
+/* s2 */
+
+.sparkle-2-a {
+    left: 80%;
+    top: 30%;
+    animation-delay: 0.4s;
+}
+
+.sparkle-2-b {
+    left: 26%;
+    top: 74%;
+    animation-delay: 1s;
+}
+
+
+/* s3 */
+
+.sparkle-3-a {
+    left: 70%;
+    top: 24%;
+    animation-delay: 0.6s;
+}
+
+.sparkle-3-b {
+    left: 13.5%;
+    top: 55%;
+    animation-delay: 1.4s;
+}
+
+.sparkle-3-c {
+    left: 83.5%;
+    top: 68%;
+    animation-delay: 0.2s;
+}
+
+@keyframes twinkle {
+    0%,
+    49% {
+        opacity: 1;
+    }
+
+    50%,
+    100% {
+        opacity: 0;
+    }
+
+}
+/* ---------- Home ---------- */
+
+/* ---------- About me ---------- */
+/* ---------- Main Layout ---------- */
+
+.about-main {
+    width: 814px;
+    max-width: calc(100% - 80px);
+
+    margin-left: clamp(40px, 21.875vw, 350px);
+
+    padding-top: 150px;
+    padding-bottom: 40px;
+}
+
+
+/* ---------- About Me Title ---------- */
+
+.about-title {
+    display: block;
+
+    width: 540px;
+    max-width: 100%;
+    height: auto;
+
+    margin-bottom: 80px;
+}
+
+
+/* ---------- Sections ---------- */
+
+.about-section {
+    width: 100%;
+}
+
+.about-section + .about-section {
+    margin-top: 80px;
+}
+
+
+/* ---------- Introduction ---------- */
+
+.about-intro h1 {
+    margin: 0 0 28px 0;
+
+    color: #2b2b2b;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+
+.intro-text {
+    max-width: 100%;
+}
+
+
+.intro-text p {
+    margin: 0 0 20px 0;
+
+    color: #2b2b2b;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+
+    line-height: 1.35;
+}
+
+
+/* ---------- Section Titles ---------- */
+
+.about-section h2 {
+    margin: 0 0 22px 0;
+
+    color: #2b2b2b;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+
+/* ---------- Tabs ---------- */
+
+.about-tabs {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    gap: 50px;
+
+    margin-bottom: 28px;
+
+    border-bottom: 1px solid #bdbdbd;
+}
+
+.about-tabs .tab {
+    position: relative;
+
+    padding: 0 0 12px 0;
+
+    border: none;
+    background: none;
+
+    color: #999999;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+
+    cursor: pointer;
+
+    transition: color 0.3s ease;
+}
+
+.about-tabs .tab:hover {
+    color: #2b2b2b;
+}
+
+.about-tabs .tab.active {
+    color: #2b2b2b;
+    font-weight: 500;
+}
+
+.about-tabs .tab.active::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: -1px;
+
+    width: 100%;
+    height: 2px;
+
+    background-color: #2b2b2b;
+}
+
+
+/* ---------- Skills ---------- */
+
+/* Skills */
+
+.skills-content {
+    display: none;
+}
+
+
+/* Software */
+
+#software-content {
+    display: block;
+}
+
+
+/* Skills boxes layout */
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+
+    column-gap: 32px;
+    row-gap: 20px;
+}
+
+
+/* Single skill box */
+
+.skill-box {
+    width: 250px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 0 18px;
+
+    border: 1px solid #aaaaaa;
+    border-radius: 4px;
+
+    color: #2b2b2b;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+/* Skill icons */
+
+.skill-box img {
+    width: 22px;
+    height: 22px;
+
+    object-fit: contain;
+}
+
+
+/* ---------- Education ---------- */
+
+.education-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 390px);
+
+    gap: 33px;
+}
+
+
+.education-card {
+    width: 390px;
+    height: 146px;
+
+    padding: 18px;
+
+    border: 1px solid #aaaaaa;
+    border-radius: 4px;
+}
+
+
+.education-date {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    margin-bottom: 10px;
+
+    color: #2b2b2b;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+}
+
+
+.education-date img {
+    width: 18px;
+    height: 18px;
+
+    object-fit: contain;
+}
+
+
+.education-card h3 {
+    margin: 0 0 9px 0;
+
+    color: #2b2b2b;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+.education-card > p {
+    margin: 0 0 10px 0;
+
+    color: #2b2b2b;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+}
+
+
+.education-tags {
+    display: flex;
+    align-items: center;
+
+    gap: 14px;
+}
+
+
+.education-tags span {
+    padding: 3px 10px;
+
+    background-color: #f1f1f1;
+
+    color: #2b2b2b;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+/* ---------- Certificate ---------- */
+
+
+/* Certificate */
+
+.certificate-content {
+    display: none;
+}
+
+
+/* Certificate Card */
+
+.certificate-card {
+    width: 390px;
+    height: 146px;
+
+    padding: 18px;
+
+    border: 1px solid #aaaaaa;
+    border-radius: 4px;
+}
+
+
+/* Coursera - Online Course */
+
+.certificate-provider {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    margin-bottom: 10px;
+
+    color: #2b2b2b;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+}
+
+
+/* Certificate icon */
+
+.certificate-provider img {
+    width: 18px;
+    height: 18px;
+
+    object-fit: contain;
+}
+
+
+/* Basics of Web Development & Coding */
+
+.certificate-card h3 {
+    margin: 0 0 9px 0;
+
+    color: #2b2b2b;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+/* University of Michigan */
+
+.certificate-card > p {
+    margin: 0 0 10px 0;
+
+    color: #2b2b2b;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+}
+
+
+/* HTML / CSS / JavaScript */
+
+.certificate-tags {
+    display: flex;
+    align-items: center;
+
+    gap: 14px;
+}
+
+
+.certificate-tags span {
+    width: 92px;
+
+    padding: 3px 10px;
+
+    background-color: #f1f1f1;
+
+    text-align: center;
+
+    color: #2b2b2b;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+/* ---------- Hobbies ---------- */
+
+.hobbies-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    align-items: end;
+}
+
+
+.hobby {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: flex-end;
+
+    gap: 12px;
+}
+
+
+.hobby img {
+    width: 90px;
+    height: 90px;
+
+    object-fit: contain;
+}
+
+
+.hobby span {
+    color: #2b2b2b;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+/* ---------- Currently Exploring ---------- */
+
+.exploring-section p {
+    width: 100%;
+
+    margin: 0;
+
+    color: #2b2b2b;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+
+    line-height: 1.35;
+}
+
+/* ---------- Footer ---------- */
+
+.about-footer {
+    margin-top: 160px;
+
+    text-align: center;
+}
+
+
+.about-footer p {
+    margin: 0;
+
+    color: #2b2b2b;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+}
+/* ---------- About me ---------- */
+
+
+/* ---------- Tablet ---------- */
+
+@media (max-width: 900px) {
+
+    header {
+        padding: 30px 30px 15px;
+    }
+
+    header > img {
+        width: 100px;
+        height: auto;
+    }
+
+    nav {
+        gap: 30px;
+    }
+
+    nav a {
+        font-size: 15px;
+    }
+
+    .portfolio-title {
+        max-width: calc(100% - 60px);
+    }
+
+    .hero-subtitle {
+        font-size: 15px;
+    }
+
+    .hero-year {
+        font-size: 15px;
+    }
+
+    .sparkle-1 {
+        width: 38px;
+    }
+
+    .sparkle-2 {
+        width: 46px;
+    }
+
+    .sparkle-3 {
+        width: 38px;
+    }
+
+        /* ---------- About Me ---------- */
+
+    .about-main {
+        width: auto;
+        max-width: none;
+
+        margin-left: 60px;
+        margin-right: 60px;
+
+        padding-top: 140px;
+    }
+
+
+    .about-title {
+        width: 430px;
+    }
+
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 20px;
+    }
+
+
+    .skill-box {
+        width: 100%;
+    }
+
+
+    .education-grid {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+
+    .education-card {
+        width: 100%;
+    }
+
+    .certificate-card {
+    width: 100%;
+    }
+
+    .hobbies-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+
+    .about-footer {
+        margin-top: 120px;
+    }
+}
+
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 20px 20px 12px;
+    }
+
+    header > img {
+        width: 85px;
+        height: auto;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    .portfolio-title {
+        width: 100%;
+        max-width: calc(100% - 40px);
+    }
+
+    .hero-subtitle {
+        margin-bottom: 16px;
+        font-size: 15px;
+    }
+
+    .hero-year {
+        margin-top: 12px;
+        font-size: 15px;
+    }
+
+    .sparkle-1 {
+        width: 24px;
+    }
+
+    .sparkle-2 {
+        width: 30px;
+    }
+
+    .sparkle-3 {
+        width: 24px;
+    }
+
+        /* ---------- About Me ---------- */
+
+    .about-main {
+        width: auto;
+        max-width: none;
+
+        margin-left: 20px;
+        margin-right: 20px;
+
+        padding-top: 120px;
+    }
+
+
+    .about-title {
+        width: 280px;
+
+        margin-bottom: 60px;
+    }
+
+
+    .about-section + .about-section {
+        margin-top: 60px;
+    }
+
+
+    .about-intro h1 {
+        font-size: 24px;
+    }
+
+
+    .about-section h2 {
+        font-size: 24px;
+    }
+
+
+    .intro-text {
+        width: 100%;
+    }
+
+
+    .about-tabs {
+        gap: 28px;
+
+        overflow-x: auto;
+    }
+
+
+    .about-tabs .tab {
+        flex-shrink: 0;
+    }
+
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .skill-box {
+        width: 100%;
+    }
+
+
+    .education-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .education-card {
+        width: 100%;
+        height: auto;
+
+        min-height: 146px;
+    }
+
+    .certificate-card {
+    width: 100%;
+    height: auto;
+
+    min-height: 146px;
+    }
+
+    .certificate-tags {
+    gap: 8px;
+    }
+
+    .certificate-tags span {
+    flex: 1;
+    width: auto;
+    }
+
+    .hobbies-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        row-gap: 40px;
+    }
+
+
+    .hobby img {
+        width: 75px;
+        height: 75px;
+    }
+
+
+    .about-footer {
+        margin-top: 80px;
+    }
+}

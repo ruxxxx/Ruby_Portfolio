@@ -1,0 +1,1716 @@
+/* ========================================
+   Project Detail Page
+======================================== */
+
+
+/* ========================================
+   Main
+======================================== */
+
+.project-detail-main {
+    width: 100%;
+    padding-top: 110px;
+}
+
+/* ========================================
+   Hero
+======================================== */
+
+.project-hero {
+    position: relative;
+
+    width: 100%;
+    height: calc(100vh - 110px);
+
+    overflow: hidden;
+}
+
+
+.project-hero-image {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* ---------- Hero Text ---------- */
+
+.project-hero-content {
+    position: absolute;
+
+    left: 40px;
+    bottom: 40px;
+
+    z-index: 2;
+}
+
+
+.project-hero-content h1 {
+    margin: 0 0 24px 0;
+
+    color: #FFFDF9;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 48px;
+    font-weight: 500;
+}
+
+
+/* ---------- Hero Tags ---------- */
+
+.project-tags {
+    display: flex;
+    align-items: center;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+}
+
+
+.project-tags span {
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 24px;
+
+    background-color: #FFFDF9;
+
+    border-radius: 30px;
+
+    color: #2b2b2b;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+
+/* ========================================
+   Project Summary
+======================================== */
+
+.project-summary {
+    width: calc(100% - 80px);
+
+    margin: 80px 40px 80px;
+
+    display: grid;
+
+    grid-template-columns: 569px 1fr;
+
+    column-gap: 111px;
+
+    align-items: stretch;
+}
+
+
+/* ---------- Summary Image ---------- */
+
+.project-summary-image {
+    width: 550px;
+    height: 530px;
+
+    overflow: hidden;
+}
+
+
+.project-summary-image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* ---------- Summary Details ---------- */
+
+.project-summary-details {
+    width: 100%;
+}
+
+
+.summary-row {
+    display: grid;
+
+    grid-template-columns: 110px 1fr;
+
+    column-gap: 151px;
+
+    align-items: start;
+
+    padding: 35px 0;
+
+    border-bottom: 1px solid #c8c8c8;
+}
+
+
+.summary-row:first-child {
+    padding-top: 0;
+}
+
+
+.summary-row:last-child {
+    border-bottom: none;
+}
+
+
+.summary-row h3 {
+    margin: 0;
+
+    color: #2b2b2b;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+.summary-row p {
+    margin: 0;
+
+    color: #2b2b2b;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+
+    line-height: 1.45;
+}
+
+.summary-divider {
+    margin-top: 80px;
+}
+
+/* ========================================
+   Shared Project Sections
+======================================== */
+
+.project-section {
+    width: calc(100% - 80px);
+
+    margin-left: 40px;
+    margin-right: 40px;
+
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+
+.project-section h2 {
+    margin: 0 0 70px 0;
+
+    color: #2b2b2b;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+
+.project-divider {
+    width: calc(100% - 80px);
+
+    margin: 0 40px;
+
+    border: none;
+    border-top: 1px solid #d4d4d4;
+}
+
+
+
+/* ========================================
+   01. Overview
+======================================== */
+
+.overview-layout {
+    display: grid;
+
+    grid-template-columns: 36% 1fr;
+
+    column-gap: 80px;
+
+    align-items: center;
+}
+
+
+.overview-text h3 {
+    margin: 0 0 26px 0;
+
+    color: #2b2b2b;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+.overview-text p {
+    margin: 0;
+
+    max-width: 500px;
+
+    color: #2b2b2b;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+
+    line-height: 1.45;
+}
+
+
+/* Circular System = Image */
+
+.overview-diagram {
+    width: 100%;
+}
+
+
+.overview-diagram img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    object-fit: contain;
+}
+
+
+
+/* ========================================
+   02. Background
+======================================== */
+
+.background-content {
+    width: 700px;
+    max-width: 100%;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+
+.background-content h3 {
+    margin: 0 0 20px 0;
+
+    color: #2b2b2b;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+.background-content p {
+    margin: 0;
+
+    color: #2b2b2b;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+
+    line-height: 1.45;
+}
+
+
+.background-content blockquote {
+    margin: 60px auto 0;
+
+    max-width: 680px;
+
+    color: #999999;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+
+    line-height: 1.45;
+}
+
+
+
+/* ========================================
+   03. Research
+======================================== */
+
+
+/* ---------- Research Methods ---------- */
+
+.research-methods-layout {
+    display: grid;
+
+    grid-template-columns: 32% 1fr;
+
+    column-gap: 80px;
+
+    align-items: center;
+}
+
+
+.research-methods-title p {
+    margin: 0;
+
+    color: #2b2b2b;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+.research-methods-diagram {
+    width: 100%;
+}
+
+
+.research-methods-diagram img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    object-fit: contain;
+}
+
+
+/* ---------- Research Insights ---------- */
+
+.research-insights {
+    margin-top: 100px;
+}
+
+
+.research-insights > h3 {
+    margin: 0 0 35px 0;
+
+    color: #2b2b2b;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+.research-insights-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 32px;
+}
+
+
+.research-insight-card {
+    min-height: 190px;
+
+    padding: 28px;
+
+    border: 1px dashed #777777;
+}
+
+
+.research-insight-card h4 {
+    margin: 0 0 16px 0;
+
+    color: #2b2b2b;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+.research-insight-card ul {
+    margin: 0;
+
+    padding-left: 20px;
+}
+
+
+.research-insight-card li {
+    margin-bottom: 5px;
+
+    color: #2b2b2b;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+
+    line-height: 1.35;
+}
+
+/* ========================================
+   04. Service Touch Points
+======================================== */
+
+.touchpoints-chart {
+    width: 100%;
+}
+
+.touchpoints-chart img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    object-fit: contain;
+}
+
+
+
+/* ========================================
+   05. User Testing
+======================================== */
+
+.user-testing-layout {
+    display: grid;
+
+    grid-template-columns: 42% 1fr;
+
+    column-gap: 70px;
+
+    align-items: start;
+}
+
+
+/* ---------- Left Text ---------- */
+
+.user-testing-text {
+    display: flex;
+    flex-direction: column;
+
+    gap: 36px;
+}
+
+
+.testing-block h3 {
+    margin: 0 0 14px 0;
+
+    color: #2b2b2b;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+.testing-block p {
+    margin: 0;
+
+    max-width: 520px;
+
+    color: #2b2b2b;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+
+    line-height: 1.45;
+}
+
+
+/* ---------- Right Insight Cards ---------- */
+
+.user-testing-insights {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+
+.testing-card {
+    min-height: 175px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 26px 24px;
+
+    border: 1px dashed #888888;
+
+    text-align: center;
+}
+
+
+.testing-card h4 {
+    margin: 0 0 14px 0;
+
+    color: #2b2b2b;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+.testing-card p {
+    margin: 0;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+
+    line-height: 1.4;
+}
+
+
+.testing-issue {
+    color: #999999;
+}
+
+
+.testing-response {
+    margin-top: 14px !important;
+
+    color: #2b2b2b;
+}
+
+
+.testing-response strong {
+    font-weight: 500;
+}
+
+/* ========================================
+   06. Brand Identity
+======================================== */
+
+.brand-identity-image {
+    width: 100%;
+}
+
+
+.brand-identity-image img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    object-fit: contain;
+}
+
+
+
+/* ========================================
+   07. Project Gallery
+======================================== */
+
+.project-gallery-grid {
+    display: grid;
+
+    grid-template-columns: 655fr 751fr;
+
+    gap: 20px;
+
+    align-items: start;
+}
+
+
+/* Two independent columns */
+
+.gallery-column {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+
+/* Images keep their original proportions */
+
+.gallery-item {
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.gallery-item img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.5s ease;
+}
+
+/* Gallery size */
+
+.gallery-item-1 {
+    width: 655px;
+    height: 445px;
+}
+
+.gallery-item-2 {
+    width: 751px;
+    height: 394px;
+}
+
+.gallery-item-3 {
+    width: 655px;
+    height: 396px;
+}
+
+.gallery-item-4 {
+    width: 751px;
+    height: 446px;
+}
+
+/* Hover zoom */
+
+.gallery-item:hover img {
+    transform: scale(1.06);
+}
+
+/* ========================================
+   Gallery Lightbox
+======================================== */
+
+
+/* Gallery images are now buttons */
+
+.gallery-trigger {
+    padding: 0;
+
+    border: none;
+    background: none;
+
+    cursor: pointer;
+}
+
+
+/* ---------- Full Screen Overlay ---------- */
+
+.gallery-lightbox {
+    position: fixed;
+
+    inset: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 60px;
+
+    background-color: rgba(0, 0, 0, 0.55);
+
+    z-index: 5000;
+
+
+    /* Hidden by default */
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+
+/* Lightbox open state */
+
+.gallery-lightbox.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+
+/* ---------- Lightbox Content ---------- */
+
+.lightbox-content {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    max-width: 85vw;
+    max-height: 82vh;
+}
+
+
+/* ---------- Enlarged Image ---------- */
+
+.lightbox-image {
+    display: block;
+
+    width: auto;
+    height: auto;
+
+    max-width: 85vw;
+    max-height: 82vh;
+
+    object-fit: contain;
+}
+
+
+/* ---------- Close Button ---------- */
+
+.lightbox-close {
+    position: absolute;
+
+    top: -45px;
+    right: 0;
+
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    border: none;
+    border-radius: 12px;
+
+    background-color: #FFFDF9;
+
+    cursor: pointer;
+
+    z-index: 2;
+}
+
+
+/* Delete Icon */
+
+.lightbox-close img {
+    width: 25px;
+    height: 25px;
+
+    object-fit: contain;
+}
+
+/* ========================================
+   03. Faint Signals
+======================================== */
+
+.signals-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 80px;
+}
+
+
+.signal-card h3 {
+    margin: 0 0 18px 0;
+
+    color: #2b2b2b;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+.signal-card p {
+    margin: 0;
+
+    color: #2b2b2b;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+
+    line-height: 1.45;
+}
+
+
+
+/* ========================================
+   04. What-if Scenario
+======================================== */
+
+.scenario-layout {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+
+    align-items: center;
+}
+
+
+.scenario-text p {
+    margin: 0 0 24px 0;
+
+    color: #2b2b2b;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+
+    line-height: 1.45;
+}
+
+
+.scenario-text p:last-child {
+    margin-bottom: 0;
+}
+
+
+.scenario-image {
+    width: 100%;
+}
+
+
+.scenario-image img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    object-fit: contain;
+}
+
+
+
+/* ========================================
+   05. Selling Points
+======================================== */
+
+.selling-points-layout {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+
+    align-items: center;
+}
+
+
+.selling-points-image {
+    width: 100%;
+}
+
+
+.selling-points-image img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    object-fit: cover;
+}
+
+
+.selling-points-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+
+.selling-point {
+    width: 100%;
+    min-height: 52px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 28px;
+
+    border: 1px solid #aaaaaa;
+
+    color: #2b2b2b;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+
+/* ========================================
+   06. Promotion Strategy
+======================================== */
+
+.promotion-strategy {
+    position: relative;
+
+    width: 100%;
+    height: 260px;
+}
+
+
+/* Grey connecting line */
+
+.promotion-line {
+    position: absolute;
+
+    top: 10px;
+
+    left: 13.48%;
+    right: 13.90%;
+
+    height: 1px;
+
+    background-color: #aaaaaa;
+}
+
+
+/* Each touch point */
+
+.promotion-point {
+    position: absolute;
+
+    top: 0;
+
+    width: 300px;
+
+    text-align: center;
+
+    transform: translateX(-50%);
+}
+
+
+/*
+At 1512px desktop:
+section begins 40px from page edge.
+
+Circle 1 left edge ≈ 223px
+Circle 2 ≈ 500px after Circle 1
+Circle 3 ≈ 500px after Circle 2
+*/
+
+.promotion-point-1 {
+    left: 13.48%;
+}
+
+
+.promotion-point-2 {
+    left: 49.79%;
+}
+
+
+.promotion-point-3 {
+    left: 86.10%;
+}
+
+
+/* 20 × 20 circle */
+
+.promotion-circle {
+    width: 20px;
+    height: 20px;
+
+    margin: 0 auto 16px;
+
+    border: 1px solid #999999;
+    border-radius: 50%;
+
+    background-color: #FFFDF9;
+}
+
+
+.promotion-number {
+    margin: 0 0 10px 0;
+
+    color: #999999;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+
+.promotion-point h3 {
+    margin: 0 0 12px 0;
+
+    color: #2b2b2b;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+.promotion-description {
+    margin: 0 auto;
+
+    max-width: 270px;
+
+    color: #2b2b2b;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+
+    line-height: 1.4;
+}
+
+/* ========================================
+   Footer
+======================================== */
+
+.project-footer {
+    margin-top: 80px;
+    margin-bottom: 40px;
+
+    text-align: center;
+}
+
+
+.project-footer p {
+    margin: 0;
+
+    color: #2b2b2b;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+
+
+/* ========================================
+   Tablet
+======================================== */
+
+@media (max-width: 900px) {
+
+    .project-detail-main {
+        padding-top: 120px;
+    }
+
+
+    /* ---------- Hero ---------- */
+
+    .project-hero-content {
+        left: 30px;
+        bottom: 30px;
+    }
+
+
+    .project-hero-content h1 {
+        margin-bottom: 18px;
+
+        font-size: 36px;
+    }
+
+
+    .project-tags {
+        gap: 16px;
+    }
+
+
+    .project-tags span {
+        height: 38px;
+
+        padding: 0 18px;
+
+        font-size: 12px;
+    }
+
+
+    /* ---------- Summary ---------- */
+
+    .project-summary {
+        width: auto;
+
+        margin: 60px 30px 60px;
+
+        grid-template-columns: 42% 1fr;
+
+        column-gap: 45px;
+    }
+
+
+    .project-summary-image {
+        width: 100%;
+        height: auto;
+
+        aspect-ratio: 1 / 1;
+
+        overflow: hidden;
+    }
+
+
+    .summary-row {
+        grid-template-columns: 80px 1fr;
+
+        column-gap: 35px;
+
+        padding: 25px 0;
+    }
+
+
+    .summary-row h3,
+    .summary-row p {
+        font-size: 12px;
+    }
+
+
+    /* ---------- Sections ---------- */
+
+    .project-section {
+        width: auto;
+
+        margin-left: 30px;
+        margin-right: 30px;
+
+        padding-top: 65px;
+        padding-bottom: 65px;
+    }
+
+
+    .project-divider {
+        width: auto;
+
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+
+    .project-section h2 {
+        margin-bottom: 50px;
+
+        font-size: 22px;
+    }
+
+
+    /* ---------- Overview ---------- */
+
+    .overview-layout {
+        grid-template-columns: 38% 1fr;
+
+        column-gap: 50px;
+    }
+
+
+    /* ---------- Research ---------- */
+
+    .research-methods-layout {
+        grid-template-columns: 28% 1fr;
+
+        column-gap: 50px;
+    }
+
+
+    .research-insights {
+        margin-top: 80px;
+    }
+
+
+    .research-insights-grid {
+        gap: 20px;
+    }
+
+    /* ---------- lightbox images ---------- */
+     
+    .gallery-lightbox {
+    padding: 40px;
+    }
+
+    .lightbox-content {
+    max-width: 88vw;
+    max-height: 80vh;
+    }
+
+    .lightbox-image {
+    max-width: 88vw;
+    max-height: 80vh;
+    }
+
+    .lightbox-close {
+    top: -38px;
+
+    width: 64px;
+    height: 64px;
+    }
+
+    .lightbox-close img {
+    width: 25px;
+    height: 25px;
+    }
+
+    /* ---------- Service Touch Points / User Testing ---------- */
+
+.user-testing-layout {
+    grid-template-columns: 38% 1fr;
+
+    column-gap: 40px;
+}
+
+
+.user-testing-text {
+    gap: 28px;
+}
+
+
+.testing-block h3 {
+    font-size: 14px;
+}
+
+
+.testing-block p {
+    font-size: 12px;
+}
+
+
+.user-testing-insights {
+    gap: 16px;
+}
+
+
+.testing-card {
+    min-height: 160px;
+
+    padding: 20px 16px;
+}
+
+
+.testing-card h4 {
+    font-size: 14px;
+}
+
+
+.testing-card p {
+    font-size: 11px;
+}
+
+    /* ---------- Project 2 ---------- */
+
+    .signals-grid {
+        gap: 40px;
+    }
+
+
+    .signal-card h3 {
+        font-size: 14px;
+    }
+
+
+    .signal-card p {
+        font-size: 12px;
+    }
+
+
+    .scenario-layout,
+    .selling-points-layout {
+        gap: 45px;
+    }
+
+
+    .scenario-text p {
+        font-size: 12px;
+    }
+
+
+    .selling-point {
+        min-height: 46px;
+
+        padding: 0 20px;
+
+        font-size: 12px;
+    }
+
+
+    .promotion-point {
+        width: 220px;
+    }
+
+
+    .promotion-number {
+        font-size: 11px;
+    }
+
+
+    .promotion-point h3 {
+        font-size: 13px;
+    }
+
+
+    .promotion-description {
+        max-width: 200px;
+
+        font-size: 10px;
+    }
+
+    /* ---------- Footer ---------- */
+
+    .project-footer {
+        margin-top: 120px;
+        margin-bottom: 30px;
+    }
+}
+
+
+
+/* ========================================
+   Mobile
+======================================== */
+
+@media (max-width: 600px) {
+
+    .project-detail-main {
+        padding-top: 95px;
+    }
+
+
+    /* ---------- Hero ---------- */
+
+    .project-hero {
+        aspect-ratio: 4 / 5;
+    }
+
+
+    .project-hero-content {
+        left: 20px;
+        right: 20px;
+
+        bottom: 24px;
+    }
+
+
+    .project-hero-content h1 {
+        margin-bottom: 16px;
+
+        font-size: 30px;
+    }
+
+
+    .project-tags {
+        gap: 10px;
+    }
+
+
+    .project-tags span {
+        height: 32px;
+
+        padding: 0 14px;
+
+        font-size: 10px;
+    }
+
+
+    /* ---------- Summary ---------- */
+
+    .project-summary {
+        width: auto;
+
+        margin: 50px 20px 50px;
+
+        display: block;
+    }
+
+
+    .project-summary-image {
+        width: 100%;
+        height: auto;
+
+        aspect-ratio: 569 / 539;
+
+        margin-bottom: 50px;
+    }
+
+
+    .summary-row {
+        grid-template-columns: 90px 1fr;
+
+        column-gap: 20px;
+
+        padding: 22px 0;
+    }
+
+
+    .summary-row:first-child {
+        padding-top: 0;
+    }
+
+
+    .summary-row h3,
+    .summary-row p {
+        font-size: 11px;
+    }
+
+
+    /* ---------- Sections ---------- */
+
+    .project-section {
+        width: auto;
+
+        margin-left: 20px;
+        margin-right: 20px;
+
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
+
+
+    .project-divider {
+        width: auto;
+
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+
+    .project-section h2 {
+        margin-bottom: 40px;
+
+        font-size: 20px;
+    }
+
+
+    /* ---------- Overview ---------- */
+
+    .overview-layout {
+        display: block;
+    }
+
+
+    .overview-text {
+        margin-bottom: 45px;
+    }
+
+
+    .overview-text h3 {
+        font-size: 14px;
+    }
+
+
+    .overview-text p {
+        font-size: 12px;
+    }
+
+
+    /* ---------- Background ---------- */
+
+    .background-content h3 {
+        font-size: 14px;
+    }
+
+
+    .background-content p,
+    .background-content blockquote {
+        font-size: 12px;
+    }
+
+
+    .background-content blockquote {
+        margin-top: 40px;
+    }
+
+
+    /* ---------- Research ---------- */
+
+    .research-methods-layout {
+        display: block;
+    }
+
+
+    .research-methods-title {
+        margin-bottom: 35px;
+    }
+
+
+    .research-methods-title p {
+        font-size: 12px;
+    }
+
+
+    .research-insights {
+        margin-top: 60px;
+    }
+
+
+    .research-insights-grid {
+        grid-template-columns: 1fr;
+
+        gap: 16px;
+    }
+
+
+    .research-insight-card {
+        min-height: 0;
+
+        padding: 22px;
+    }
+
+
+    /* ---------- Gallery ---------- */
+
+    .project-gallery-grid {
+        grid-template-columns: 1fr;
+
+        gap: 16px;
+    }
+
+
+    .gallery-item-1,
+    .gallery-item-2,
+    .gallery-item-3,
+    .gallery-item-4 {
+        aspect-ratio: auto;
+    }
+
+
+    .gallery-item img {
+        height: auto;
+    }
+
+    /* ---------- lightbox images ---------- */
+    .gallery-lightbox {
+    padding: 20px;
+   }
+
+    .lightbox-content {
+    max-width: 92vw;
+    max-height: 78vh;
+    }
+
+    .lightbox-image {
+    max-width: 92vw;
+    max-height: 78vh;
+    }
+
+    .lightbox-close {
+    top: -32px;
+
+    width: 52px;
+    height: 52px;
+
+    border-radius: 9px;
+    }
+
+    .lightbox-close img {
+    width: 22px;
+    height: 22px;
+    }
+
+    /* ---------- Service Touch Points / User Testing ---------- */
+
+.user-testing-layout {
+    display: block;
+}
+
+
+.user-testing-text {
+    gap: 30px;
+
+    margin-bottom: 50px;
+}
+
+
+.testing-block h3 {
+    font-size: 14px;
+}
+
+
+.testing-block p {
+    max-width: none;
+
+    font-size: 12px;
+}
+
+
+.user-testing-insights {
+    grid-template-columns: 1fr;
+
+    gap: 16px;
+}
+
+
+.testing-card {
+    min-height: 0;
+
+    padding: 22px 18px;
+}
+
+
+.testing-card h4 {
+    font-size: 14px;
+}
+
+
+.testing-card p {
+    font-size: 12px;
+}
+
+    /* ---------- Project 2 ---------- */
+
+    .signals-grid {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+
+    .scenario-layout,
+    .selling-points-layout {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+
+    .selling-points-list {
+        gap: 12px;
+    }
+
+
+    /*
+    Promotion strategy becomes vertical
+    on mobile.
+    */
+
+    .promotion-strategy {
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 36px;
+    }
+
+
+    .promotion-line {
+        display: none;
+    }
+
+
+    .promotion-point {
+        position: relative;
+
+        top: auto;
+        left: auto;
+
+        width: 100%;
+
+        transform: none;
+    }
+
+
+    .promotion-description {
+        max-width: 280px;
+
+        font-size: 11px;
+    }
+    
+    /* ---------- Footer ---------- */
+
+    .project-footer {
+        margin-top: 80px;
+        margin-bottom: 20px;
+    }
+}

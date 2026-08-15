@@ -1,0 +1,234 @@
+/* ========================================
+   Contact Page
+======================================== */
+
+
+/* ---------- Main ---------- */
+
+.contact-main {
+    width: 100%;
+    min-height: 100vh;
+
+    box-sizing: border-box;
+
+    padding-top: 130px;
+    padding-bottom: 30px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* ========================================
+   Contact Title
+======================================== */
+
+.contact-title {
+    display: block;
+
+    width: 540px;
+    max-width: calc(100% - 80px);
+    height: auto;
+
+    margin: 0 auto;
+}
+
+
+/* ========================================
+   Contact Information
+======================================== */
+
+.contact-info {
+    width: calc(100% - 700px);
+
+    margin: 150px auto 0;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    column-gap: 150px;
+}
+
+
+/* ---------- Individual Item ---------- */
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+}
+
+
+/* Icon + Heading */
+
+.contact-item-heading {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 15px;
+}
+
+
+.contact-item-heading img {
+    display: block;
+
+    width: 20px;
+    height: 20px;
+
+    object-fit: contain;
+}
+
+
+.contact-item-heading h2 {
+    margin: 0;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+
+    color: #2b2b2b;
+}
+
+
+/* Contact detail */
+
+.contact-item > p {
+    margin: 0;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+
+    color: #2b2b2b;
+
+    line-height: 1.4;
+}
+
+
+/* ========================================
+   Footer
+======================================== */
+
+.contact-footer {
+    width: 100%;
+
+    margin-top: auto;
+
+    padding-top: 80px;
+
+    text-align: center;
+}
+
+
+.contact-footer p {
+    margin: 0;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+
+    color: #2b2b2b;
+}
+
+
+/* ========================================
+   Tablet
+======================================== */
+
+@media (max-width: 900px) {
+
+    .contact-main {
+        padding-top: 140px;
+        padding-bottom: 30px;
+    }
+
+
+    .contact-title {
+        width: 430px;
+        max-width: calc(100% - 60px);
+    }
+
+
+    .contact-info {
+        width: auto;
+
+        margin: 130px 60px 0;
+
+        column-gap: 50px;
+    }
+
+
+    .contact-item-heading h2,
+    .contact-item > p {
+        font-size: 15px;
+    }
+
+
+    .contact-item-heading img {
+        width: 18px;
+        height: 18px;
+    }
+
+}
+
+
+/* ========================================
+   Mobile
+======================================== */
+
+@media (max-width: 600px) {
+
+    .contact-main {
+        padding-top: 120px;
+        padding-bottom: 25px;
+    }
+
+
+    .contact-title {
+        width: 280px;
+        max-width: calc(100% - 40px);
+    }
+
+
+    .contact-info {
+        width: auto;
+
+        margin: 90px 20px 0;
+
+        grid-template-columns: 1fr;
+
+        row-gap: 45px;
+    }
+
+
+    .contact-item-heading {
+        margin-bottom: 10px;
+    }
+
+
+    .contact-item-heading h2,
+    .contact-item > p {
+        font-size: 14px;
+    }
+
+
+    .contact-item-heading img {
+        width: 17px;
+        height: 17px;
+    }
+
+
+    .contact-footer {
+        padding-top: 80px;
+    }
+
+
+    .contact-footer p {
+        font-size: 11px;
+    }
+
+}

@@ -1,0 +1,960 @@
+/* ========================================
+   Project 3 - LUMA
+======================================== */
+
+
+/* ========================================
+   03. Why Mindfulness Breathing?
+======================================== */
+
+/*
+Uses the same 2-column structure
+as Project 2 Faint Signals.
+*/
+
+.project3-page .mindfulness-card p {
+    margin: 0 0 24px 0;
+}
+
+.project3-page .mindfulness-card p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ========================================
+   04. Competitor Analysis
+======================================== */
+
+/*
+Uses the same 2 x 2 layout
+as Project 1 Research Insights.
+*/
+
+.project3-page .competitor-types {
+    margin: 0 0 14px 0;
+
+    color: #999999;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+
+    line-height: 1.35;
+}
+
+
+.project3-page .competitor-card li strong {
+    font-weight: 500;
+}
+
+
+
+/* ========================================
+   05. About LUMA
+======================================== */
+
+
+/* ---------- Material + Shape ---------- */
+
+/*
+Uses the existing signals-grid layout.
+*/
+
+.project3-page .luma-material-card h3 {
+    margin-bottom: 18px;
+}
+
+
+/* ---------- Colour System Section ---------- */
+
+.project3-page .luma-colour-layout {
+    margin-top: 70px;
+
+    padding-top: 70px;
+
+    border-top: 1px solid #d4d4d4;
+
+    align-items: center;
+}
+
+
+/* Left text */
+
+.project3-page .luma-colour-text {
+    display: flex;
+    flex-direction: column;
+
+    gap: 42px;
+}
+
+
+.project3-page .luma-info-block h3 {
+    margin: 0 0 16px 0;
+
+    color: #2b2b2b;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+.project3-page .luma-info-block p {
+    margin: 0;
+
+    color: #2b2b2b;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+
+    line-height: 1.45;
+}
+
+
+/* ---------- Four Light Images ---------- */
+
+.project3-page .luma-colour-images {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+
+.project3-page .luma-colour-images img {
+    display: block;
+
+    width: 100%;
+
+    aspect-ratio: 1 / 1;
+
+    object-fit: cover;
+}
+
+
+
+/* ========================================
+   06. Exploded View
+======================================== */
+
+.project3-page .exploded-view-image {
+    width: 52%;
+    max-width: 720px;
+
+    margin: 0 auto;
+}
+
+
+.project3-page .exploded-view-image img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    object-fit: contain;
+}
+
+
+
+/* ========================================
+   07. Use Scenario
+======================================== */
+
+/*
+Uses the same two-column layout
+as Faint Signals.
+*/
+
+.project3-page .use-scenario-card p {
+    margin: 0 0 12px 0;
+}
+
+
+.project3-page .use-scenario-card p:last-child {
+    margin-bottom: 0;
+}
+
+
+.project3-page .use-scenario-card strong {
+    font-weight: 500;
+}
+
+
+
+/* ========================================
+   Tablet
+======================================== */
+
+@media (max-width: 900px) {
+
+
+    /* ---------- Mindfulness ---------- */
+
+    .project3-page .mindfulness-card p {
+        margin-bottom: 18px;
+    }
+
+
+    /* ---------- Competitor ---------- */
+
+    .project3-page .competitor-types {
+        font-size: 10px;
+    }
+
+
+    /* ---------- About LUMA ---------- */
+
+    .project3-page .luma-colour-layout {
+        margin-top: 55px;
+
+        padding-top: 55px;
+
+        gap: 45px;
+    }
+
+
+    .project3-page .luma-colour-text {
+        gap: 32px;
+    }
+
+
+    .project3-page .luma-info-block h3 {
+        font-size: 14px;
+    }
+
+
+    .project3-page .luma-info-block p {
+        font-size: 12px;
+    }
+
+
+    .project3-page .luma-colour-images {
+        gap: 14px;
+    }
+
+
+    /* ---------- Exploded View ---------- */
+
+    .project3-page .exploded-view-image {
+        width: 62%;
+    }
+
+}
+
+
+
+/* ========================================
+   Mobile
+======================================== */
+
+@media (max-width: 600px) {
+
+
+    /* ---------- Mindfulness ---------- */
+
+    .project3-page .mindfulness-card p {
+        margin-bottom: 16px;
+    }
+
+
+    /* ---------- Competitor Analysis ---------- */
+
+    .project3-page .competitor-types {
+        font-size: 10px;
+    }
+
+
+    /*
+    research-insights-grid already becomes
+    one column from shared CSS.
+    */
+
+
+    /* ---------- About LUMA ---------- */
+
+    .project3-page .luma-colour-layout {
+        margin-top: 45px;
+
+        padding-top: 45px;
+    }
+
+
+    .project3-page .luma-colour-text {
+        gap: 30px;
+
+        margin-bottom: 40px;
+    }
+
+
+    .project3-page .luma-info-block h3 {
+        font-size: 14px;
+    }
+
+
+    .project3-page .luma-info-block p {
+        font-size: 12px;
+    }
+
+
+    .project3-page .luma-colour-images {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 10px;
+    }
+
+
+    /* ---------- Exploded View ---------- */
+
+    .project3-page .exploded-view-image {
+        width: 90%;
+        max-width: none;
+    }
+
+
+    /* ---------- Use Scenario ---------- */
+
+    .project3-page .use-scenario-card p {
+        margin-bottom: 10px;
+    }
+
+}
+
+/* ========================================
+   Project 4 - FlyGo
+======================================== */
+
+
+/* ========================================
+   03. Competitor Analysis
+======================================== */
+
+/*
+Uses the same SWOT layout as Project 1 / 3.
+Only text spacing is adjusted here.
+*/
+
+.project4-page .competitor-card ul {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+
+.project4-page .competitor-card li {
+    margin-bottom: 10px;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+
+    line-height: 1.4;
+}
+
+
+.project4-page .competitor-card li:last-child {
+    margin-bottom: 0;
+}
+
+
+.project4-page .competitor-card li strong {
+    font-weight: 500;
+}
+
+
+
+/* ========================================
+   04. Online Ethnography
+======================================== */
+
+.project4-page .ethnography-layout {
+    display: grid;
+
+    grid-template-columns: 38% 1fr;
+
+    column-gap: 90px;
+
+    align-items: center;
+}
+
+
+/* Left */
+
+.project4-page .ethnography-text h3 {
+    margin: 0 0 18px 0;
+
+    color: #2b2b2b;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+.project4-page .ethnography-text p {
+    margin: 0;
+
+    max-width: 480px;
+
+    color: #2b2b2b;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+
+    line-height: 1.45;
+}
+
+
+/* Right diagram */
+
+.project4-page .ethnography-diagram {
+    width: 100%;
+}
+
+
+.project4-page .ethnography-diagram img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    object-fit: contain;
+}
+
+
+
+/* ========================================
+   05. Key Pain Points
+======================================== */
+
+.project4-page .pain-points-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+
+    margin-top: 10px;
+}
+
+
+.project4-page .pain-point-card {
+    min-height: 58px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 24px;
+
+    border: 1px solid #aaaaaa;
+}
+
+
+.project4-page .pain-point-card p {
+    margin: 0;
+
+    color: #2b2b2b;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+
+    line-height: 1.35;
+}
+
+
+.project4-page .pain-point-card span {
+    font-weight: 400;
+}
+
+
+
+/* ========================================
+   06. Wireflow
+======================================== */
+
+.project4-page .wireflow-layout {
+    display: grid;
+
+    grid-template-columns: 46% 1fr;
+
+    column-gap: 90px;
+
+    align-items: start;
+}
+
+
+/* Left image */
+
+.project4-page .wireflow-image {
+    width: 100%;
+}
+
+
+.project4-page .wireflow-image img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    object-fit: contain;
+}
+
+
+/* Right text */
+
+.project4-page .wireflow-text {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 65px;
+}
+
+
+.project4-page .wireflow-group h3 {
+    margin: 0 0 16px 0;
+
+    color: #2b2b2b;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+.project4-page .wireflow-group p {
+    margin: 0 0 12px 0;
+
+    color: #2b2b2b;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+
+    line-height: 1.4;
+}
+
+
+.project4-page .wireflow-group p:last-child {
+    margin-bottom: 0;
+}
+
+
+.project4-page .wireflow-group strong {
+    font-weight: 500;
+}
+
+
+
+/* ========================================
+   07. Heuristic Evaluation
+======================================== */
+
+
+/* ---------- Overview ---------- */
+
+.project4-page .testing-overview {
+    width: 720px;
+
+    max-width: 100%;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+
+.project4-page .testing-overview p {
+    margin: 0;
+
+    color: #2b2b2b;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+
+    line-height: 1.45;
+}
+
+
+.project4-page .testing-overview .testing-meta {
+    margin-bottom: 18px;
+
+    font-size: 13px;
+    font-weight: 500;
+}
+
+
+
+/* ---------- 4 Result Boxes ---------- */
+
+.project4-page .heuristic-results {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 35px;
+
+    margin-top: 55px;
+}
+
+
+.project4-page .heuristic-result-box {
+    width: 200px;
+    height: 120px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 15px;
+
+    border: 1px dashed #888888;
+
+    text-align: center;
+}
+
+
+.project4-page .heuristic-result-box strong {
+    margin-bottom: 10px;
+
+    color: #2b2b2b;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+.project4-page .heuristic-result-box p {
+    margin: 0;
+
+    color: #2b2b2b;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+
+    line-height: 1.3;
+}
+
+
+
+/* ---------- Findings + Responses ---------- */
+
+.project4-page .testing-response {
+    margin-top: 0 !important;
+}
+
+.project4-page .testing-findings-layout {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    column-gap: 120px;
+
+    margin-top: 70px;
+}
+
+
+.project4-page .testing-findings,
+.project4-page .testing-responses {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 26px;
+}
+
+
+.project4-page .testing-findings > h3,
+.project4-page .testing-responses > h3 {
+    margin: 0;
+
+    color: #2b2b2b;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+.project4-page .testing-finding h4,
+.project4-page .testing-response h4 {
+    margin: 0 0 8px 0;
+
+    color: #2b2b2b;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+
+.project4-page .testing-finding p,
+.project4-page .testing-response p {
+    margin: 0;
+
+    color: #2b2b2b;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+
+    line-height: 1.4;
+}
+
+
+
+/* ========================================
+   Tablet
+======================================== */
+
+@media (max-width: 900px) {
+
+
+    /* ---------- Competitor ---------- */
+
+    .project4-page .competitor-card li {
+        font-size: 11px;
+    }
+
+
+    /* ---------- Ethnography ---------- */
+
+    .project4-page .ethnography-layout {
+        grid-template-columns: 38% 1fr;
+
+        column-gap: 45px;
+    }
+
+
+    .project4-page .ethnography-text h3 {
+        font-size: 14px;
+    }
+
+
+    .project4-page .ethnography-text p {
+        font-size: 12px;
+    }
+
+
+    /* ---------- Pain Points ---------- */
+
+    .project4-page .pain-points-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 18px;
+    }
+
+
+    .project4-page .pain-point-card {
+        min-height: 52px;
+
+        padding: 0 18px;
+    }
+
+
+    .project4-page .pain-point-card p {
+        font-size: 11px;
+    }
+
+
+    /* ---------- Wireflow ---------- */
+
+    .project4-page .wireflow-layout {
+        grid-template-columns: 44% 1fr;
+
+        column-gap: 45px;
+    }
+
+
+    .project4-page .wireflow-text {
+        gap: 25px;
+    }
+
+
+    .project4-page .wireflow-group h3 {
+        font-size: 13px;
+    }
+
+
+    .project4-page .wireflow-group p {
+        font-size: 11px;
+    }
+
+
+    /* ---------- Testing ---------- */
+
+    .project4-page .testing-overview {
+        width: 600px;
+    }
+
+
+    .project4-page .testing-overview p {
+        font-size: 12px;
+    }
+
+
+    .project4-page .heuristic-results {
+        gap: 18px;
+
+        margin-top: 45px;
+    }
+
+
+    .project4-page .heuristic-result-box {
+        width: 150px;
+        height: 100px;
+
+        padding: 12px;
+    }
+
+
+    .project4-page .heuristic-result-box strong {
+        font-size: 16px;
+    }
+
+
+    .project4-page .heuristic-result-box p {
+        font-size: 10px;
+    }
+
+
+    .project4-page .testing-findings-layout {
+        column-gap: 60px;
+
+        margin-top: 55px;
+    }
+
+
+    .project4-page .testing-findings > h3,
+    .project4-page .testing-responses > h3 {
+        font-size: 14px;
+    }
+
+
+    .project4-page .testing-finding h4,
+    .project4-page .testing-response h4,
+    .project4-page .testing-finding p,
+    .project4-page .testing-response p {
+        font-size: 11px;
+    }
+
+}
+
+
+
+/* ========================================
+   Mobile
+======================================== */
+
+@media (max-width: 600px) {
+
+
+    /* ---------- Competitor ---------- */
+
+    .project4-page .competitor-card li {
+        font-size: 11px;
+    }
+
+
+    /* ---------- Online Ethnography ---------- */
+
+    .project4-page .ethnography-layout {
+        grid-template-columns: 1fr;
+
+        row-gap: 40px;
+    }
+
+
+    .project4-page .ethnography-text {
+        width: 100%;
+    }
+
+
+    .project4-page .ethnography-diagram {
+        width: 100%;
+    }
+
+
+    /* ---------- Pain Points ---------- */
+
+    .project4-page .pain-points-grid {
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+    }
+
+
+    .project4-page .pain-point-card {
+        width: 100%;
+
+        min-height: 50px;
+    }
+
+
+    /* ---------- Wireflow ---------- */
+
+    .project4-page .wireflow-layout {
+        grid-template-columns: 1fr;
+
+        row-gap: 40px;
+    }
+
+
+    .project4-page .wireflow-image {
+        width: 100%;
+    }
+
+
+    .project4-page .wireflow-text {
+        gap: 28px;
+    }
+
+
+    /* ---------- Testing Overview ---------- */
+
+    .project4-page .testing-overview {
+        width: 100%;
+    }
+
+
+    /* ---------- Result Boxes ---------- */
+
+    .project4-page .heuristic-results {
+        display: grid;
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 15px;
+
+        margin-top: 40px;
+    }
+
+
+    .project4-page .heuristic-result-box {
+        width: 100%;
+        height: 110px;
+    }
+
+
+    /* ---------- Findings + Responses ---------- */
+
+    .project4-page .testing-findings-layout {
+        grid-template-columns: 1fr;
+
+        row-gap: 50px;
+
+        margin-top: 50px;
+    }
+
+}

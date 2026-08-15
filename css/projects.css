@@ -1,0 +1,343 @@
+/* ========================================
+   Projects Page
+======================================== */
+
+
+/* ---------- Main ---------- */
+
+.projects-main {
+    width: 100%;
+
+    padding-top: 150px;
+    padding-bottom: 40px;
+}
+
+
+/* ---------- Projects Title ---------- */
+
+.projects-title {
+    display: block;
+
+    width: 540px;
+    max-width: calc(100% - 80px);
+    height: auto;
+
+    margin: 0 auto 80px;
+}
+
+
+/* ---------- Projects Grid ---------- */
+
+.projects-grid {
+    width: 1424px;
+    max-width: calc(100% - 80px);
+
+    margin: 0 auto;
+
+    display: grid;
+
+    /*
+    At full size:
+    Left   = 560px
+    Middle = 489px
+    Right  = 335px
+    */
+
+    grid-template-columns:
+        minmax(0, 560fr)
+        minmax(0, 489fr)
+        minmax(0, 335fr);
+
+    gap: 20px;
+
+    align-items: stretch;
+}
+
+
+/* ---------- Middle Column ---------- */
+
+.projects-middle {
+    height: 100%;
+
+    display: grid;
+
+    /*
+    Top    = 278px
+    Bottom = 262px
+    Gap    = 20px
+    Total  = 560px
+    */
+
+    grid-template-rows: 278fr 262fr;
+
+    gap: 20px;
+}
+
+
+/* ========================================
+   Project Cards
+======================================== */
+
+.project-card {
+    position: relative;
+
+    display: block;
+
+    width: 100%;
+
+    background-color: #F7F1E4;
+
+    color: #2b2b2b;
+    text-decoration: none;
+
+    overflow: hidden;
+}
+
+
+/* ---------- Project 1 ---------- */
+
+.project-card-1 {
+    aspect-ratio: 1 / 1;
+
+    --image-width: 95%;
+    --image-height: 85.357%;
+}
+
+
+/* ---------- Project 2 ---------- */
+
+.project-card-2 {
+    width: 100%;
+    height: 100%;
+
+    --image-width: 95%;
+    --image-height: 70.144%;
+}
+
+
+/* ---------- Project 3 ---------- */
+
+.project-card-3 {
+    width: 100%;
+    height: 100%;
+
+    --image-width: 95%;
+    --image-height: 67.939%;
+}
+
+
+/* ---------- Project 4 ---------- */
+
+.project-card-4 {
+    aspect-ratio: 335 / 560;
+
+    --image-width: 92%;
+    --image-height: 85%;
+}
+
+
+/* ========================================
+   Project Images
+======================================== */
+
+.project-image-wrapper {
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: var(--image-width);
+    height: var(--image-height);
+
+    overflow: hidden;
+}
+
+.project-image-wrapper img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-image-wrapper img {
+    transform: scale(1.06);
+}
+
+/* ========================================
+   Project Text
+======================================== */
+
+
+/* Category - top left */
+
+.project-category {
+    position: absolute;
+
+    top: 14px;
+
+    left: calc(
+        (100% - var(--image-width)) / 2
+    );
+
+    z-index: 2;
+
+    margin: 0;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+
+    color: #2b2b2b;
+}
+
+
+/* Project name - bottom right */
+
+.project-name {
+    position: absolute;
+
+    right: calc(
+        (100% - var(--image-width)) / 2
+    );
+
+    bottom: 12px;
+
+    z-index: 2;
+
+    margin: 0;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+
+    color: #2b2b2b;
+
+    text-align: right;
+}
+
+
+/* ========================================
+   Tablet
+======================================== */
+
+@media (max-width: 900px) {
+
+    .projects-main {
+        padding-top: 140px;
+        padding-bottom: 40px;
+    }
+
+
+    .projects-title {
+        width: 430px;
+        max-width: calc(100% - 60px);
+
+        margin-bottom: 60px;
+    }
+
+
+    /*
+    On tablet, stack the four projects vertically.
+    */
+
+    .projects-grid {
+        width: 560px;
+        max-width: calc(100% - 60px);
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+
+    /*
+    Makes Project 2 and Project 3 participate
+    directly in the main grid.
+    */
+
+    .projects-middle {
+        display: contents;
+    }
+
+
+    .project-card-1 {
+        aspect-ratio: 1 / 1;
+    }
+
+
+    .project-card-2 {
+        height: auto;
+
+        aspect-ratio: 489 / 278;
+    }
+
+
+    .project-card-3 {
+        height: auto;
+
+        aspect-ratio: 489 / 262;
+    }
+
+
+    .project-card-4 {
+        aspect-ratio: 335 / 560;
+    }
+
+
+    .project-category,
+    .project-name {
+        font-size: 14px;
+    }
+}
+
+
+/* ========================================
+   Mobile
+======================================== */
+
+@media (max-width: 600px) {
+
+    .projects-main {
+        padding-top: 120px;
+        padding-bottom: 40px;
+    }
+
+
+    .projects-title {
+        width: 280px;
+        max-width: calc(100% - 40px);
+
+        margin-bottom: 50px;
+    }
+
+
+    .projects-grid {
+        width: auto;
+        max-width: none;
+
+        margin-left: 20px;
+        margin-right: 20px;
+
+        gap: 16px;
+    }
+
+
+    .project-category {
+        top: 10px;
+
+        font-size: 12px;
+    }
+
+
+    .project-name {
+        bottom: 10px;
+
+        font-size: 12px;
+    }
+}
