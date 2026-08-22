@@ -91,48 +91,80 @@
     text-decoration: none;
 
     overflow: hidden;
+
+    /*
+    All project cards now use
+    exactly the same left/right spacing.
+    */
+
+    --card-side-gap: 14px;
 }
 
 
-/* ---------- Project 1 ---------- */
+/* ---------- Project 1 Position ---------- */
 
 .project-card-1 {
     aspect-ratio: 1 / 1;
 
-    --image-width: 95%;
     --image-height: 85.357%;
 }
 
 
-/* ---------- Project 2 ---------- */
+/* ---------- Project 2 Position ---------- */
 
 .project-card-2 {
     width: 100%;
     height: 100%;
 
-    --image-width: 95%;
     --image-height: 70.144%;
 }
 
 
-/* ---------- Project 3 ---------- */
+/* ---------- Project 3 Position ----------
+   Fridge2Table is currently here
+---------------------------------------- */
 
 .project-card-3 {
     width: 100%;
     height: 100%;
 
-    --image-width: 95%;
     --image-height: 67.939%;
 }
 
 
-/* ---------- Project 4 ---------- */
+/* ---------- Project 4 Position ---------- */
 
 .project-card-4 {
     aspect-ratio: 335 / 560;
 
-    --image-width: 92%;
     --image-height: 85%;
+}
+
+
+/* ---------- Project 5 Position ----------
+   LUMA is currently here
+---------------------------------------- */
+
+.project-card-5 {
+    width: 560px;
+    height: 380px;
+
+    --image-height: 78%;
+}
+
+
+/* ========================================
+   Extra Projects Row
+======================================== */
+
+.projects-extra {
+    width: 1424px;
+    max-width: calc(100% - 80px);
+
+    margin: 20px auto 0;
+
+    display: flex;
+    justify-content: flex-start;
 }
 
 
@@ -143,16 +175,19 @@
 .project-image-wrapper {
     position: absolute;
 
-    left: 50%;
+    left: var(--card-side-gap);
+    right: var(--card-side-gap);
+
     top: 50%;
 
-    transform: translate(-50%, -50%);
+    transform: translateY(-50%);
 
-    width: var(--image-width);
+    width: auto;
     height: var(--image-height);
 
     overflow: hidden;
 }
+
 
 .project-image-wrapper img {
     display: block;
@@ -165,25 +200,24 @@
     transition: transform 0.5s ease;
 }
 
+
 .project-card:hover .project-image-wrapper img {
     transform: scale(1.06);
 }
+
 
 /* ========================================
    Project Text
 ======================================== */
 
 
-/* Category - top left */
+/* ---------- Category - top left ---------- */
 
 .project-category {
     position: absolute;
 
     top: 14px;
-
-    left: calc(
-        (100% - var(--image-width)) / 2
-    );
+    left: var(--card-side-gap);
 
     z-index: 2;
 
@@ -197,15 +231,12 @@
 }
 
 
-/* Project name - bottom right */
+/* ---------- Project name - bottom right ---------- */
 
 .project-name {
     position: absolute;
 
-    right: calc(
-        (100% - var(--image-width)) / 2
-    );
-
+    right: var(--card-side-gap);
     bottom: 12px;
 
     z-index: 2;
@@ -242,9 +273,7 @@
     }
 
 
-    /*
-    On tablet, stack the four projects vertically.
-    */
+    /* Stack projects vertically */
 
     .projects-grid {
         width: 560px;
@@ -257,8 +286,8 @@
 
 
     /*
-    Makes Project 2 and Project 3 participate
-    directly in the main grid.
+    Makes the two middle projects
+    participate directly in the main grid.
     */
 
     .projects-middle {
@@ -294,6 +323,25 @@
     .project-name {
         font-size: 14px;
     }
+
+
+    /* ---------- Extra Project ---------- */
+
+    .projects-extra {
+        width: 560px;
+        max-width: calc(100% - 60px);
+
+        margin-top: 20px;
+    }
+
+
+    .project-card-5 {
+        width: 100%;
+        height: auto;
+
+        aspect-ratio: 560 / 380;
+    }
+
 }
 
 
@@ -328,6 +376,16 @@
     }
 
 
+    /*
+    All project cards still have
+    identical spacing on mobile.
+    */
+
+    .project-card {
+        --card-side-gap: 12px;
+    }
+
+
     .project-category {
         top: 10px;
 
@@ -340,4 +398,21 @@
 
         font-size: 12px;
     }
+
+
+    /* ---------- Extra Project ---------- */
+
+    .projects-extra {
+        width: auto;
+        max-width: none;
+
+        margin: 16px 20px 0;
+    }
+
+
+    .project-card-5 {
+        width: 100%;
+        height: auto;
+    }
+
 }
