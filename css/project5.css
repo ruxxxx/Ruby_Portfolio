@@ -1,0 +1,678 @@
+/* ========================================
+   Project 5 - Fridge2Table
+======================================== */
+
+/* ========================================
+   04. User Research
+======================================== */
+
+.project5-page .user-research-layout {
+    display: grid;
+
+    grid-template-columns: 38% 1fr;
+
+    column-gap: 90px;
+
+    align-items: center;
+}
+
+
+.project5-page .user-research-text h3 {
+    margin: 0 0 18px 0;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+
+    color: #2b2b2b;
+}
+
+
+.project5-page .user-research-text p {
+    margin: 0;
+
+    max-width: 480px;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+
+    line-height: 1.45;
+
+    color: #2b2b2b;
+}
+
+
+.project5-page .user-research-diagram {
+    width: 100%;
+}
+
+
+.project5-page .user-research-diagram img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    object-fit: contain;
+}
+
+/* ========================================
+   03. Competitor Analysis
+======================================== */
+
+/* Reuse Project 4 SWOT layout */
+
+.project5-page .competitor-card ul {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+
+.project5-page .competitor-card li {
+    margin-bottom: 10px;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+
+    line-height: 1.4;
+}
+
+
+.project5-page .competitor-card li:last-child {
+    margin-bottom: 0;
+}
+
+
+.project5-page .competitor-card li strong {
+    font-weight: 500;
+}
+
+
+/* ---------- Product Opportunity ---------- */
+
+.project5-page .product-opportunity {
+    margin-top: 40px;
+}
+
+
+.project5-page .product-opportunity h3 {
+    margin: 0 0 10px 0;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+
+    color: #2b2b2b;
+}
+
+
+.project5-page .product-opportunity p {
+    margin: 0;
+
+    max-width: 1100px;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+
+    line-height: 1.4;
+
+    color: #2b2b2b;
+}
+
+
+
+/* ========================================
+   04. User Research
+======================================== */
+
+/*
+Uses Project 4 Online Ethnography layout:
+Left text + Right diagram image
+*/
+
+.project5-page .user-research-diagram img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    object-fit: contain;
+}
+
+
+
+/* ========================================
+   05. Thematic Analysis
+======================================== */
+
+.project5-page .thematic-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+
+/* Each theme box */
+
+.project5-page .thematic-card {
+    min-height: 110px;
+
+    padding: 22px 24px;
+
+    border: 1px solid #aaaaaa;
+}
+
+
+.project5-page .thematic-card h3 {
+    margin: 0 0 12px 0;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+
+    color: #2b2b2b;
+}
+
+
+.project5-page .thematic-card p {
+    margin: 0;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+
+    line-height: 1.4;
+
+    color: #2b2b2b;
+}
+
+
+/*
+Theme 5 stays on the left,
+like your Figma layout.
+*/
+
+.project5-page .thematic-card:last-child {
+    grid-column: 1 / 2;
+}
+
+
+
+/* ========================================
+   06. Wireflow
+======================================== */
+
+.project5-page .wireflow-layout {
+    display: grid;
+
+    grid-template-columns: 46% 1fr;
+
+    column-gap: 90px;
+
+    align-items: start;
+}
+
+
+/* Left image */
+
+.project5-page .wireflow-image {
+    width: 100%;
+}
+
+
+.project5-page .wireflow-image img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    object-fit: contain;
+}
+
+
+/* Right text */
+
+.project5-page .wireflow-text {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 34px;
+}
+
+
+.project5-page .wireflow-group h3 {
+    margin: 0 0 16px 0;
+
+    color: #2b2b2b;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+.project5-page .wireflow-group p {
+    margin: 0 0 10px 0;
+
+    color: #2b2b2b;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+
+    line-height: 1.4;
+}
+
+
+.project5-page .wireflow-group p:last-child {
+    margin-bottom: 0;
+}
+
+
+.project5-page .wireflow-group strong {
+    font-weight: 500;
+}
+
+
+
+/* ========================================
+   07. User Testing
+======================================== */
+
+
+/* ---------- Testing Overview ---------- */
+
+.project5-page .testing-overview {
+    width: 720px;
+    max-width: 100%;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+
+.project5-page .testing-overview p {
+    margin: 0;
+
+    color: #2b2b2b;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+
+    line-height: 1.45;
+}
+
+
+.project5-page .testing-overview .testing-meta {
+    margin-bottom: 18px;
+
+    font-size: 13px;
+    font-weight: 500;
+}
+
+
+/* ---------- 2 Result Boxes ---------- */
+
+.project5-page .project5-testing-results {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 35px;
+
+    margin-top: 55px;
+}
+
+
+.project5-page .project5-testing-results .heuristic-result-box {
+    width: 200px;
+    height: 120px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 15px;
+
+    border: 1px dashed #888888;
+
+    text-align: center;
+}
+
+
+.project5-page .heuristic-result-box strong {
+    margin-bottom: 10px;
+
+    color: #2b2b2b;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+.project5-page .heuristic-result-box p {
+    margin: 0;
+
+    color: #2b2b2b;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+
+    line-height: 1.3;
+}
+
+
+/* ---------- Findings + Design Responses ---------- */
+
+.project5-page .testing-findings-layout {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    column-gap: 120px;
+
+    margin-top: 70px;
+}
+
+
+.project5-page .testing-findings,
+.project5-page .testing-responses {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 26px;
+}
+
+
+.project5-page .testing-findings > h3,
+.project5-page .testing-responses > h3 {
+    margin: 0;
+
+    color: #2b2b2b;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+.project5-page .testing-finding h4,
+.project5-page .testing-response h4 {
+    margin: 0 0 8px 0;
+
+    color: #2b2b2b;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+
+.project5-page .testing-finding p,
+.project5-page .testing-response p {
+    margin: 0;
+
+    color: #2b2b2b;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+
+    line-height: 1.4;
+}
+
+
+/* Important:
+   removes old Project 1 testing-response margin
+*/
+
+.project5-page .testing-response {
+    margin-top: 0 !important;
+}
+
+
+
+/* ========================================
+   Tablet
+======================================== */
+
+@media (max-width: 900px) {
+
+
+    /* ---------- Competitor ---------- */
+
+    .project5-page .competitor-card li {
+        font-size: 11px;
+    }
+
+
+    .project5-page .product-opportunity {
+        margin-top: 30px;
+    }
+
+
+    .project5-page .product-opportunity h3 {
+        font-size: 13px;
+    }
+
+
+    .project5-page .product-opportunity p {
+        font-size: 11px;
+    }
+
+
+    /* ---------- Thematic Analysis ---------- */
+
+    .project5-page .thematic-grid {
+        gap: 16px;
+    }
+
+
+    .project5-page .thematic-card {
+        min-height: 95px;
+
+        padding: 18px;
+    }
+
+
+    .project5-page .thematic-card h3 {
+        font-size: 12px;
+    }
+
+
+    .project5-page .thematic-card p {
+        font-size: 11px;
+    }
+
+
+  /* ---------- Wireflow ---------- */
+
+    .project5-page .wireflow-layout {
+        grid-template-columns: 44% 1fr;
+
+        column-gap: 45px;
+    }
+
+
+    .project5-page .wireflow-text {
+        gap: 26px;
+    }
+
+
+    .project5-page .wireflow-group h3 {
+        font-size: 13px;
+    }
+
+
+    .project5-page .wireflow-group p {
+        font-size: 11px;
+    }
+
+
+    /* ---------- User Testing ---------- */
+
+    .project5-page .testing-overview {
+        width: 600px;
+    }
+
+
+    .project5-page .testing-overview p {
+        font-size: 12px;
+    }
+
+
+    .project5-page .project5-testing-results {
+        gap: 25px;
+
+        margin-top: 45px;
+    }
+
+
+    .project5-page .project5-testing-results .heuristic-result-box {
+        width: 160px;
+        height: 100px;
+
+        padding: 12px;
+    }
+
+
+    .project5-page .heuristic-result-box strong {
+        font-size: 16px;
+    }
+
+
+    .project5-page .heuristic-result-box p {
+        font-size: 10px;
+    }
+
+
+    .project5-page .testing-findings-layout {
+        column-gap: 60px;
+
+        margin-top: 55px;
+    }
+
+
+    .project5-page .testing-findings > h3,
+    .project5-page .testing-responses > h3 {
+        font-size: 14px;
+    }
+
+
+    .project5-page .testing-finding h4,
+    .project5-page .testing-response h4,
+    .project5-page .testing-finding p,
+    .project5-page .testing-response p {
+        font-size: 11px;
+    }
+
+}
+
+
+
+/* ========================================
+   Mobile
+======================================== */
+
+@media (max-width: 600px) {
+
+
+    /* ---------- Product Opportunity ---------- */
+
+    .project5-page .product-opportunity {
+        margin-top: 30px;
+    }
+
+
+    /* ---------- Thematic Analysis ---------- */
+
+    .project5-page .thematic-grid {
+        grid-template-columns: 1fr;
+
+        gap: 14px;
+    }
+
+
+    .project5-page .thematic-card {
+        width: 100%;
+
+        min-height: auto;
+
+        padding: 18px;
+    }
+
+
+    .project5-page .thematic-card:last-child {
+        grid-column: auto;
+    }
+
+
+/* ---------- Wireflow ---------- */
+
+    .project5-page .wireflow-layout {
+        grid-template-columns: 1fr;
+
+        row-gap: 40px;
+    }
+
+
+    .project5-page .wireflow-image {
+        width: 100%;
+    }
+
+
+    .project5-page .wireflow-text {
+        gap: 28px;
+    }
+
+
+    /* ---------- User Testing ---------- */
+
+    .project5-page .testing-overview {
+        width: 100%;
+    }
+
+
+    .project5-page .project5-testing-results {
+        display: grid;
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 15px;
+
+        margin-top: 40px;
+    }
+
+
+    .project5-page .project5-testing-results .heuristic-result-box {
+        width: 100%;
+        height: 110px;
+    }
+
+
+    .project5-page .testing-findings-layout {
+        grid-template-columns: 1fr;
+
+        row-gap: 50px;
+
+        margin-top: 50px;
+    }
+
+}
